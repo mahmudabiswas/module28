@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- daisy ui add -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.4.24/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <section>
+      <header></header>
+      <main>
+        <div class="flex md:flex-col lg:flex-row gap-2 mx-6 my-12">
+          <!-- flex container -->
+          <div
+            class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+          >
+            <!-- first card -->
+            <div className="card w-96 bg-base-100 shadow-xl border">
+              <figure>
+                <img src="images/triangle.png" alt="Shoes" />
+              </figure>
+              <div className="card-body">
+                <h2 className="card-title">Triangle</h2>
+                <p>
+                  <input
+                    id="triangeleBase"
+                    type="number"
+                    class="border bg-gray-400 w-20"
+                    placeholder="base"
+                  />
+                  <span class="ml-2">cm</span>
+
+                  <input
+                    id="triangeleHeight"
+                    type="number"
+                    class="border bg-gray-400 w-20"
+                    placeholder="height"
+                  />
+                  <span class="ml-2">cm</span>
+                </p>
+                <h3>Area <span id="triangeleArea"></span></h3>
+                <div className="card-actions w-full">
+                  <button className="btn btn-primary" id="btnTriangle">
+                    Calculate
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- second card -->
+            <div className="card w-96 bg-base-100 shadow-xl border">
+              <figure>
+                <img src="images/rectangle.png" alt="Shoes" />
+              </figure>
+              <div className="card-body">
+                <h2 className="card-title">Rectangle</h2>
+                <p>If a dog chews shoes whose shoes does he choose?</p>
+                <div className="card-actions justify-end">
+                  <button className="btn btn-primary">Buy Now</button>
+                </div>
+              </div>
+            </div>
+            <!-- third card -->
+            <div className="card w-96 bg-base-100 shadow-xl border">
+              <figure>
+                <img src="images/parallelogram.png" alt="Shoes" />
+              </figure>
+              <div className="card-body">
+                <h2 className="card-title">Parallelogram</h2>
+                <p>If a dog chews shoes whose shoes does he choose?</p>
+                <div className="card-actions justify-end">
+                  <button className="btn btn-primary">Buy Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- area container -->
+          <div class="w-[400px]">
+            <h1 class="text-4xl">Area Calculate</h1>
+          </div>
+        </div>
+      </main>
+    </section>
+  </body>
+
+  <script src="index.js"></script>
+</html>
