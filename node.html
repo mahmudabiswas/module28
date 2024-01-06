@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>knowing to parent node child node</title>
+    <!-- link daisy and tailwind  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.5.0/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <main class="flex justify-between gap-10">
+      <div class="flex flex-1 gap-10">
+        <!-- rose 1 -->
+        <div className="card shadow-xl">
+          <img src="images/rose1.jpg" alt="Shoes" />
+
+          <div className="card-body">
+            <h2 className="card-title font-semibold">Snow White</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum,
+              amet.
+            </p>
+            <p class="font-bold">Price <span>50</span> $</p>
+            <div className="card-actions ">
+              <button
+                onclick="handleClick(this)"
+                className=" bg-red-300 border"
+              >
+                ADD TO CARD
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- rose 2 -->
+        <div className="card shadow-xl">
+          <figure>
+            <img src="images/rose2.jpg" alt="Shoes" />
+          </figure>
+          <div className="card-body">
+            <h2 className="card-title font-semibold">blue White</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum,
+              amet.
+            </p>
+            <p class="font-bold">Price <span>50</span> $</p>
+            <div className="card-actions ">
+              <button
+                onclick="handleClick(this)"
+                className="btn btn-primary border"
+              >
+                ADD TO CARD
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- rose 3 -->
+        <div className="  card  shadow-xl">
+          <figure>
+            <img src="images/rose3.jpg" alt="Shoes" />
+          </figure>
+          <div className="card-body">
+            <h2 className="card-title font-semibold">black White</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum,
+              amet.
+            </p>
+            <p class="font-bold">Price <span>50</span> $</p>
+            <div className="card-actions ">
+              <button
+                onclick="handleClick(this)"
+                className="btn btn-primary border"
+              >
+                ADD TO CARD
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 2nd section -->
+      <div class="flex-1 text-center">
+        <h1>Code Hero</h1>
+        <p id="rosesName"></p>
+        <p>total: <span id="total">00</span></p>
+        <p>discount: <span id="discount">00</span></p>
+        <hr />
+        <h1>Grand Total: <span id="grandTotal">00</span></h1>
+      </div>
+    </main>
+  </body>
+  <script src="node.js"></script>
+</html>
